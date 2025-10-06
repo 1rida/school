@@ -104,7 +104,7 @@ export default function ChallanPage() {
       const pdfHeight = 2; // Fixed card dimensions
       
       // Calculate margins to center the image on the small PDF page
-      const marginX = (pdfWidth - imgProps.width / imgProps.height * pdfHeight) / 2;
+      // const marginX = (pdfWidth - imgProps.width / imgProps.height * pdfHeight) / 2;
       
       // Ensure the image fits within the card dimensions
       pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidth, pdfHeight);

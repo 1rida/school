@@ -33,8 +33,8 @@ export default function Contact() {
     Get in Touch
   </h1>
   <p className="text-lg leading-relaxed">
-    Welcome to <span className="font-semibold">Global School</span> – your
-    partner in quality education. We're excited to assist you with any
+    Welcome to <span className="font-semibold">Global School</span> your
+    partner in quality education. We are excited to assist you with any
     inquiries, feedback, or guidance you may need.
   </p>
 </div>

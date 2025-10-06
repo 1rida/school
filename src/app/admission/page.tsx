@@ -27,7 +27,7 @@ export default function AdmissionForm() {
             GLOBAL EDUCATIONAL IT PROGRAM <br /> ADMISSION FORM
           </h2>
 
-          <h3 className="mt-6 font-bold">APPLICANT'S GENERAL PROFILE:</h3>
+          <h3 className="mt-6 font-bold">APPLICANT,S GENERAL PROFILE:</h3>
 
           {/* Form Fields */}
           <form className="mt-4 space-y-4">
