@@ -37,12 +37,12 @@ const team: TeamMember[] = [
   },
   {
     img: "/images/card8.jpg",
-    name: "Mrs maria kanwal",
+    name: "Mrs Saima Liaqat",
     role: " vice principal (morning)",
   },
    {
     img: "/images/card7.jpg",
-    name: "Saima",
+    name: "Mrs maria kanwal",
     role: "rechecker and Assisstant of director",
   },
    {

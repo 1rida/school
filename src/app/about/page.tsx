@@ -141,31 +141,31 @@ export default function AboutPage() {
                 Profile of Mrs. Saima Liaquat
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                "It is an honor to serve at Global Educational Higher Secondary
+                It is an honor to serve at Global Educational Higher Secondary
                 School, where the well-being and progress of every student are
                 given utmost priority. As an Assistant of Doctor, I deeply value
                 the health and care of our students — because a healthy mind grows
                 best in a healthy body. I strive to ensure that our children feel
                 safe, supported, and cared for, both physically and emotionally,
-                so they can focus fully on their education."
+                so they can focus fully on their education.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                "In my role as a Rechecker, I see my responsibility as more than
+                In my role as a Rechecker, I see my responsibility as more than
                 just reviewing papers — it is about maintaining fairness, accuracy,
                 and transparency in our evaluation system. Every student’s hard
                 work deserves to be recognized with honesty and justice, and I take
-                pride in upholding that trust."
+                pride in upholding that trust.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                "My message to all students is simple: Take care of your health,
+                My message to all students is simple: Take care of your health,
                 work hard with sincerity, and never lose faith in yourself. Success
                 comes to those who stay consistent, keep learning, and respect the
-                values of honesty and discipline."
+                values of honesty and discipline.
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
-                "Together, as a school community, let us continue to build an
+                Together, as a school community, let us continue to build an
                 environment where every student feels nurtured, respected, and
-                motivated to reach their full potential."
+                motivated to reach their full potential.
               </p>
 
               <h3 className="text-xl font-bold text-blue-900 mb-2">
@@ -213,28 +213,28 @@ export default function AboutPage() {
                 Profile of Miss Kainat
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4">
-                "Miss Kainat is one of the most valuable members of the Global
+                Miss Kainat is one of the most valuable members of the Global
                 Educational Higher Secondary School family. Serving with honesty
-                and commitment as the school’s accountant, she manages every
-                detail with precision, accuracy, and care."
+                and commitment as the school,s accountant, she manages every
+                detail with precision, accuracy, and care.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                "Her role is not limited to numbers — she brings order,
+                Her role is not limited to numbers — she brings order,
                 transparency, and trust to the entire system. Through her
                 dedication, she ensures that every record is clear, every
                 transaction is smooth, and every financial matter is handled with
-                integrity."
+                integrity.
               </p>
               <p className="text-gray-600 leading-relaxed mb-4">
-                "Miss Kainat is known for her professionalism, discipline, and
+                Miss Kainat is known for her professionalism, discipline, and
                 supportive nature. She is always ready to assist colleagues, guide
-                students, and work as a team player to keep the school’s
-                operations running efficiently."
+                students, and work as a team player to keep the school,s
+                operations running efficiently.
               </p>
               <p className="text-gray-600 leading-relaxed mb-6">
-                "Global Educational Higher Secondary School proudly acknowledges
+                Global Educational Higher Secondary School proudly acknowledges
                 her as a symbol of reliability, hard work, and sincerity — an
-                inspiration for others to follow."
+                inspiration for others to follow.
               </p>
 
               <div className="mt-4 text-center md:text-left">
@@ -286,33 +286,33 @@ export default function AboutPage() {
       </h2>
 
       <p className="text-gray-600 leading-relaxed mb-4">
-        "It gives me immense pleasure to share my thoughts as the Vice Principal
+        It gives me immense pleasure to share my thoughts as the Vice Principal
         of Global Educational Higher Secondary School. Education, to me, is not
         merely the process of acquiring knowledge but the art of shaping a
         child's personality, character, and vision for life. At Global, we believe
         that every student is a unique individual blessed with immense potential,
         and it is our responsibility to nurture that potential with care,
-        dedication, and wisdom."
+        dedication, and wisdom.
       </p>
 
       <p className="text-gray-600 leading-relaxed mb-4">
-        "Our school stands as a symbol of quality education, moral values, and
+        Our school stands as a symbol of quality education, moral values, and
         innovative learning. We focus not only on academic excellence but also on
         instilling discipline, respect, and compassion among our students. We
         encourage critical thinking, creativity, and leadership so that our
-        students can confidently face the challenges of the modern world."
+        students can confidently face the challenges of the modern world.
       </p>
 
       <p className="text-gray-600 leading-relaxed mb-4">
-        "As Vice Principal, I feel honored to work with a team of passionate
+        As Vice Principal, I feel honored to work with a team of passionate
         teachers, cooperative parents, and highly motivated students. Together, we
         aim to create a learning environment that inspires curiosity, builds
         confidence, and develops future leaders who will serve society with
-        dignity and purpose."
+        dignity and purpose.
       </p>
 
       <p className="text-gray-600 leading-relaxed mb-4">
-        "I believe that education is a partnership between school and parents.
+        I believe that education is a partnership between school and parents.
         When we work together, we create a nurturing and supportive atmosphere
         that helps children discover their strengths and achieve their goals."
       </p>
@@ -320,8 +320,8 @@ export default function AboutPage() {
       <p className="text-gray-600 leading-relaxed mb-6">
         "Let us continue to work hand in hand to make Global Educational Higher
         Secondary School a beacon of excellence — where learning is a joy,
-        character-building is a priority, and every child’s dream finds a path to
-        success."
+        character-building is a priority, and every child,s dream finds a path to
+        success.
       </p>
 
       <div className="mt-4 text-center md:text-left">
@@ -387,23 +387,23 @@ export default function AboutPage() {
       </p>
 
       <p className="text-gray-600 leading-relaxed mb-4">
-        "Just as a well-balanced account reflects clarity and honesty, a
+        Just as a well-balanced account reflects clarity and honesty, a
         well-balanced life reflects character and integrity. I encourage our
         students to be accountable for their actions, to remain focused on their
-        goals, and to believe in the power of hard work and positivity."
+        goals, and to believe in the power of hard work and positivity.
       </p>
 
       <p className="text-gray-600 leading-relaxed mb-4">
-        "Challenges are part of every journey, but with determination, faith, and
+        Challenges are part of every journey, but with determination, faith, and
         the right mindset, no obstacle is too great. My message to all students
         is: 'Dream big, plan wisely, and never give up — your success is the
-        result of your own consistent efforts.'"
+        result of your own consistent efforts.
       </p>
 
       <p className="text-gray-600 leading-relaxed mb-6">
-        "At Global, we are not just educating minds — we are building
+        At Global, we are not just educating minds — we are building
         personalities who will contribute positively to society, lead with
-        courage, and inspire others through their achievements."
+        courage, and inspire others through their achievements.
       </p>
 
       <div className="mt-4 text-center md:text-left">
@@ -461,42 +461,42 @@ export default function AboutPage() {
       </h2>
 
       <p className="text-gray-600 leading-relaxed mb-4">
-        "It gives me immense pleasure to share my thoughts as the Vice Principal
+        It gives me immense pleasure to share my thoughts as the Vice Principal
         of Global Educational Higher Secondary School. Education, to me, is not
         merely the process of acquiring knowledge but the art of shaping a
         child's personality, character, and vision for life. At Global, we
         believe that every student is a unique individual blessed with immense
         potential, and it is our responsibility to nurture that potential with
-        care, dedication, and wisdom."
+        care, dedication, and wisdom.
       </p>
 
       <p className="text-gray-600 leading-relaxed mb-4">
-        "Our school stands as a symbol of quality education, moral values, and
+        Our school stands as a symbol of quality education, moral values, and
         innovative learning. We focus not only on academic excellence but also
         on instilling discipline, respect, and compassion among our students. We
         encourage critical thinking, creativity, and leadership so that our
-        students can confidently face the challenges of the modern world."
+        students can confidently face the challenges of the modern world.
       </p>
 
       <p className="text-gray-600 leading-relaxed mb-4">
-        "As Vice Principal, I feel honored to work with a team of passionate
+        As Vice Principal, I feel honored to work with a team of passionate
         teachers, cooperative parents, and highly motivated students. Together,
         we aim to create a learning environment that inspires curiosity, builds
         confidence, and develops future leaders who will serve society with
-        dignity and purpose."
+        dignity and purpose.
       </p>
 
       <p className="text-gray-600 leading-relaxed mb-4">
-        "I believe that education is a partnership between school and parents.
+        I believe that education is a partnership between school and parents.
         When we work together, we create a nurturing and supportive atmosphere
-        that helps children discover their strengths and achieve their goals."
+        that helps children discover their strengths and achieve their goals.
       </p>
 
       <p className="text-gray-600 leading-relaxed mb-6">
-        "Let us continue to work hand in hand to make Global Educational Higher
+        Let us continue to work hand in hand to make Global Educational Higher
         Secondary School a beacon of excellence — where learning is a joy,
-        character-building is a priority, and every child’s dream finds a path
-        to success."
+        character-building is a priority, and every child,s dream finds a path
+        to success.
       </p>
 
       <div className="mt-4 text-center md:text-left">
@@ -551,30 +551,30 @@ export default function AboutPage() {
       </h2>
 
       <p className="text-gray-600 leading-relaxed mb-4">
-        "At Global Educational Higher Secondary School, every success story is
+        At Global Educational Higher Secondary School, every success story is
         powered by the hard work of dedicated individuals — and Sir Afzal stands
         tall among them. His role as a technician and printing machine operator
-        is not just a duty, but a service that uplifts the entire school system."
+        is not just a duty, but a service that uplifts the entire school system.
       </p>
 
       <p className="text-gray-600 leading-relaxed mb-4">
-        "From early mornings to late hours, Sir Afzal ensures that every
+        From early mornings to late hours, Sir Afzal ensures that every
         technical task and every printed page is perfect, supporting teachers,
         students, and administration alike. His precision, patience, and
-        commitment bring smoothness to daily operations."
+        commitment bring smoothness to daily operations.
       </p>
 
       <p className="text-gray-600 leading-relaxed mb-4">
-        "He is a man of discipline, responsibility, and quiet strength — always
+        He is a man of discipline, responsibility, and quiet strength — always
         ready to solve a problem, lend a helping hand, and keep things on track.
         His efforts may be behind the scenes, but the results of his work shine
-        brightly in every classroom, every exam, and every school event."
+        brightly in every classroom, every exam, and every school event.
       </p>
 
       <p className="text-gray-600 leading-relaxed mb-6">
-        "Global Educational Higher Secondary School proudly recognizes Sir Afzal
+        Global Educational Higher Secondary School proudly recognizes Sir Afzal
         as not just a staff member, but a key pillar of its smooth functioning
-        and a true example of dedication and loyalty."
+        and a true example of dedication and loyalty.
       </p>
 
       <div className="mt-4 text-center md:text-left">
