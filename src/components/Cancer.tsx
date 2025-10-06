@@ -62,7 +62,7 @@ export default function AwarenessAboutCervicalCancer() {
       >
         This session was organized to raise <b>awareness about cervical cancer</b>.
         The event emphasized the importance of regular checkups, early diagnosis,
-        and preventive measures to ensure women's health and well-being.
+        and preventive measures to ensure women's health and well,being.
       </motion.p>
 
       {/* Slider */}

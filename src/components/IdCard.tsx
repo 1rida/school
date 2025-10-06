@@ -99,7 +99,7 @@ export default function ChallanPage() {
 
     if (format === 'pdf') {
       const pdf = new jsPDF('l', 'in', [3.5, 2]); // Landscape, 3.5in x 2in
-      const imgProps = pdf.getImageProperties(imgData);
+      // const imgProps = pdf.getImageProperties(imgData);
       const pdfWidth = 3.5;
       const pdfHeight = 2; // Fixed card dimensions
       
