@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useRef, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function AwarenessAboutCervicalCancer() {

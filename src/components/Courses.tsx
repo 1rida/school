@@ -210,7 +210,7 @@ const COURSES = [
 ];
 
 export default function CoursesPage() {
-  const [q, setQ] = useState("");
+  const [q,] = useState("");
   const [activeTag, setActiveTag] = useState("All");
   const [openCourse, setOpenCourse] = useState<string | null>(null);
 
