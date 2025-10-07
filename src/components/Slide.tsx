@@ -31,9 +31,9 @@ export default function Slider() {
   };
 
   return (
-    <section className="w-full mt-10 overflow-x-hidden">
+    <section className="w-full bg-white relative z-0 overflow-x-hidden">
       {/* --- Heading --- */}
-      <div className="text-center mb-10 px-4">
+      <div className="text-center mb-10 px-4 pt-10">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ export default function Slider() {
       </div>
 
       {/* --- Slider --- */}
-      <div className="relative w-full overflow-hidden shadow-lg rounded-xl">
+      <div className="relative w-full overflow-hidden shadow-lg rounded-xl bg-white">
         <div
           className="flex transition-transform duration-[1500ms] ease-[cubic-bezier(0.7,0,0.3,1)]"
           style={{ transform: `translateX(-${current * 100}%)` }}
