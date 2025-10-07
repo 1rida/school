@@ -31,7 +31,7 @@ export default function Hero2() {
 
 
         {/* Text Content */}
-        <div className="space-y-6 relative">
+        <div className="space-y-6 relative bg-white">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-900 underline decoration-[#f97316] decoration-4">
             Meet Our Dedicated Team
           </h2>
