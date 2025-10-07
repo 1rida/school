@@ -1,8 +1,6 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { jsPDF } from "jspdf";
-import html2canvas from "html2canvas";
 import { motion } from "framer-motion";
 import { X } from "lucide-react";
 import Header from "@/components/Header";
@@ -14,8 +12,14 @@ export default function ChallanPage() {
 
   // 📄 Download Challan as PDF
   const downloadPDF = async () => {
+    if (typeof window === "undefined") return;
+
     const input = challanRef.current;
     if (!input) return;
+
+    // Import libraries only in browser
+    const html2canvas = (await import("html2canvas")).default;
+    const { jsPDF } = await import("jspdf");
 
     const canvas = await html2canvas(input, { scale: 2 });
     const imgData = canvas.toDataURL("image/png", 0.6);
@@ -27,13 +31,13 @@ export default function ChallanPage() {
     pdf.save("challan.pdf");
   };
 
-  // 💳 Open card.pdf first, then auto-download after 2 seconds
+  // 💳 Download Card
   const downloadCard = () => {
-    const fileUrl = `${window.location.origin}/card.pdf`; // must be in public folder
-    // Open the file in a new tab for preview
-    const newTab = window.open(fileUrl, "_blank");
+    if (typeof window === "undefined") return;
 
-    // Automatically trigger download after 2 seconds
+    const fileUrl = `${window.location.origin}/card.pdf`;
+    window.open(fileUrl, "_blank");
+
     setTimeout(() => {
       const link = document.createElement("a");
       link.href = fileUrl;
@@ -168,7 +172,7 @@ export default function ChallanPage() {
           </div>
         </motion.div>
 
-        {/* Upload & Download Buttons */}
+        {/* Buttons */}
         <div className="flex flex-col items-center mt-6 gap-4">
           <label className="bg-gray-200 px-4 py-2 rounded cursor-pointer shadow hover:bg-gray-300">
             📤 Upload Screenshot
