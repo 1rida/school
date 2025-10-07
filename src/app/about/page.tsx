@@ -289,7 +289,7 @@ export default function AboutPage() {
         It gives me immense pleasure to share my thoughts as the Vice Principal
         of Global Educational Higher Secondary School. Education, to me, is not
         merely the process of acquiring knowledge but the art of shaping a
-        child's personality, character, and vision for life. At Global, we believe
+        child,s personality, character, and vision for life. At Global, we believe
         that every student is a unique individual blessed with immense potential,
         and it is our responsibility to nurture that potential with care,
         dedication, and wisdom.
@@ -314,11 +314,11 @@ export default function AboutPage() {
       <p className="text-gray-600 leading-relaxed mb-4">
         I believe that education is a partnership between school and parents.
         When we work together, we create a nurturing and supportive atmosphere
-        that helps children discover their strengths and achieve their goals."
+        that helps children discover their strengths and achieve their goals.
       </p>
 
       <p className="text-gray-600 leading-relaxed mb-6">
-        "Let us continue to work hand in hand to make Global Educational Higher
+        Let us continue to work hand in hand to make Global Educational Higher
         Secondary School a beacon of excellence — where learning is a joy,
         character-building is a priority, and every child,s dream finds a path to
         success.
@@ -378,12 +378,12 @@ export default function AboutPage() {
       </h2>
 
       <p className="text-gray-600 leading-relaxed mb-4">
-        "It is a matter of great pride to be a part of Global Educational Higher
+        It is a matter of great pride to be a part of Global Educational Higher
         Secondary School — an institution that values honesty, dedication, and
         excellence. In my dual role as Accountant and Motivational Speaker, I
         believe that true education goes beyond numbers and classrooms; it is
         about teaching students the values of discipline, responsibility, and
-        perseverance."
+        perseverance.
       </p>
 
       <p className="text-gray-600 leading-relaxed mb-4">
@@ -396,7 +396,7 @@ export default function AboutPage() {
       <p className="text-gray-600 leading-relaxed mb-4">
         Challenges are part of every journey, but with determination, faith, and
         the right mindset, no obstacle is too great. My message to all students
-        is: 'Dream big, plan wisely, and never give up — your success is the
+        is: Dream big, plan wisely, and never give up — your success is the
         result of your own consistent efforts.
       </p>
 
@@ -464,7 +464,7 @@ export default function AboutPage() {
         It gives me immense pleasure to share my thoughts as the Vice Principal
         of Global Educational Higher Secondary School. Education, to me, is not
         merely the process of acquiring knowledge but the art of shaping a
-        child's personality, character, and vision for life. At Global, we
+        child,s personality, character, and vision for life. At Global, we
         believe that every student is a unique individual blessed with immense
         potential, and it is our responsibility to nurture that potential with
         care, dedication, and wisdom.
