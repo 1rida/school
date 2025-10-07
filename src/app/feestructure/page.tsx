@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const container = {
+const container: Variants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
@@ -15,22 +15,20 @@ const container = {
   },
 };
 
-const item = {
+const item: Variants = {
   hidden: { opacity: 0, y: 40 },
   show: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1] },
+    transition: { duration: 0.8, ease: "easeInOut" }, // ✅ safer for TypeScript
   },
 };
 
 export default function FeeStructure() {
   return (
     <>
-      {/* 🔹 Header */}
       <Header />
 
-      {/* 🔹 Main Section */}
       <main
         className="min-h-screen bg-cover bg-center mt-9 pt-28 pb-20 px-6"
         style={{
@@ -38,17 +36,15 @@ export default function FeeStructure() {
         }}
       >
         <div className="max-w-6xl mx-auto">
-          {/* Title */}
           <motion.h1
             initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
             className="text-5xl font-extrabold text-center text-white mb-16 underline drop-shadow"
           >
             Fee Structure & Payment Options
           </motion.h1>
 
-          {/* Cards Container */}
           <motion.div
             variants={container}
             initial="hidden"
@@ -120,7 +116,6 @@ export default function FeeStructure() {
         </div>
       </main>
 
-      {/* 🔹 Footer */}
       <Footer />
     </>
   );
