@@ -17,3 +17,9 @@
   animation: marquee 10s linear infinite; /* 🔹 10s = fast speed */
   white-space: nowrap;
 }
+
+
+html, body {
+  background-color: white !important;
+  color: black;
+}
