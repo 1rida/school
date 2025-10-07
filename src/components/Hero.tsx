@@ -18,20 +18,21 @@ const letterVariants = {
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden text-white">
-      {/* --- Background Image --- */}
+      {/* 🔹 Background Image */}
       <div className="absolute inset-0 -z-10">
         <Image
           src="/images/main.jpg"
           alt="School Background"
           fill
           priority
-          className="object-cover object-center pt-32"
+          className="object-cover object-center"
         />
+        {/* Dark overlay for better readability */}
         <div className="absolute inset-0 bg-black/50" />
       </div>
 
-      {/* --- Content --- */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center space-y-10 pt-28">
+      {/* 🔹 Content */}
+      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center space-y-10">
         <motion.h1
           className="text-5xl md:text-7xl font-extrabold leading-tight drop-shadow-xl flex justify-center gap-3 flex-wrap"
         >
