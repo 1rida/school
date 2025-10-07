@@ -34,7 +34,7 @@ export default function Hero() {
       {/* 🔹 Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center space-y-10">
         <motion.h1
-          className="text-5xl md:text-7xl font-extrabold leading-tight drop-shadow-xl flex justify-center gap-3 flex-wrap"
+          className="text-5xl md:text-7xl font-extrabold leading-tight drop-shadow-xl flex justify-center gap-3 flex-wrap mt-[120px]"
         >
           {heading.split(" ").map((word, wi) => (
             <span key={wi} className="inline-block">

@@ -4,42 +4,44 @@ import { useRef, useState } from "react";
 import { jsPDF } from "jspdf";
 import html2canvas from "html2canvas";
 import { motion } from "framer-motion";
-import { ChevronDown, IdCard, X } from "lucide-react";
+import { X } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default function ChallanPage() {
   const challanRef = useRef<HTMLDivElement>(null);
-  const [open, setOpen] = useState(false);
   const [uploadedImage, setUploadedImage] = useState<string | null>(null);
 
-  // 📄 Download as PDF
+  // 📄 Download Challan as PDF
   const downloadPDF = async () => {
     const input = challanRef.current;
     if (!input) return;
 
     const canvas = await html2canvas(input, { scale: 2 });
-    const imgData = canvas.toDataURL("image/png", 0.6); // compressed
+    const imgData = canvas.toDataURL("image/png", 0.6);
     const pdf = new jsPDF("p", "mm", "a4");
     const imgProps = pdf.getImageProperties(imgData);
     const pdfWidth = pdf.internal.pageSize.getWidth();
     const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
     pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
     pdf.save("challan.pdf");
-    setOpen(false);
   };
 
-  // 🖼️ Download as JPEG
-  const downloadJPEG = async () => {
-    const input = challanRef.current;
-    if (!input) return;
+  // 💳 Open card.pdf first, then auto-download after 2 seconds
+  const downloadCard = () => {
+    const fileUrl = `${window.location.origin}/card.pdf`; // must be in public folder
+    // Open the file in a new tab for preview
+    const newTab = window.open(fileUrl, "_blank");
 
-    const canvas = await html2canvas(input, { scale: 2 });
-    const link = document.createElement("a");
-    link.href = canvas.toDataURL("image/jpeg", 0.6); // compressed
-    link.download = "challan.jpg";
-    link.click();
-    setOpen(false);
+    // Automatically trigger download after 2 seconds
+    setTimeout(() => {
+      const link = document.createElement("a");
+      link.href = fileUrl;
+      link.download = "id_card.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }, 2000);
   };
 
   // 📷 Upload Screenshot
@@ -59,7 +61,7 @@ export default function ChallanPage() {
         canvas.width = MAX_WIDTH;
         canvas.height = img.height * scaleSize;
         ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-        setUploadedImage(canvas.toDataURL("image/jpeg", 0.6)); // compressed image
+        setUploadedImage(canvas.toDataURL("image/jpeg", 0.6));
       };
     };
     reader.readAsDataURL(file);
@@ -82,7 +84,6 @@ export default function ChallanPage() {
           transition={{ duration: 0.6 }}
           className="bg-white shadow-xl rounded-lg max-w-4xl mx-auto p-6 border relative"
         >
-          {/* Header */}
           <div className="flex flex-col items-center mb-4 text-center">
             <h1 className="text-2xl font-bold text-[#0b3c7a]">
               GLOBAL EDUCATIONAL HIGHER SECONDARY SCHOOL
@@ -93,7 +94,7 @@ export default function ChallanPage() {
             <p className="font-semibold mt-2 self-end">CHALLAN No: 001</p>
           </div>
 
-          {/* Uploaded Image with ❌ Cut Option */}
+          {/* Uploaded Image */}
           {uploadedImage && (
             <div className="mb-4 flex justify-center relative w-full">
               <img
@@ -167,9 +168,8 @@ export default function ChallanPage() {
           </div>
         </motion.div>
 
-        {/* 🔹 Upload & Download Options */}
-        <div className="flex flex-col items-center mt-6 relative gap-4">
-          {/* Upload */}
+        {/* Upload & Download Buttons */}
+        <div className="flex flex-col items-center mt-6 gap-4">
           <label className="bg-gray-200 px-4 py-2 rounded cursor-pointer shadow hover:bg-gray-300">
             📤 Upload Screenshot
             <input
@@ -180,37 +180,21 @@ export default function ChallanPage() {
             />
           </label>
 
-          {/* Download Dropdown */}
-          <div className="relative">
-            <button
-              onClick={() => setOpen(!open)}
-              className="bg-[#0b3c7a] text-white px-6 py-3 rounded-lg flex items-center gap-2 shadow-md hover:bg-[#092d5c] transition"
-            >
-              Download <ChevronDown size={18} />
-            </button>
+          <button
+            onClick={downloadPDF}
+            className="bg-green-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-700 transition"
+          >
+            📄 Download Challan (PDF)
+          </button>
 
-            {open && (
-              <div className="absolute mt-2 bg-white shadow-lg rounded w-44 text-left z-10">
-                <button
-                  onClick={downloadPDF}
-                  className="block w-full px-4 py-2 hover:bg-gray-100"
-                >
-                  📄 Download PDF
-                </button>
-                <button
-                  onClick={downloadJPEG}
-                  className="block w-full px-4 py-2 hover:bg-gray-100"
-                >
-                  🖼️ Download JPEG
-                </button>
-              </div>
-            )}
-          </div>
+          <button
+            onClick={downloadCard}
+            className="bg-[#0b3c7a] text-white px-6 py-3 rounded-lg shadow-md hover:bg-[#092d5c] transition"
+          >
+            💳 Download ID Card (PDF)
+          </button>
         </div>
-
-        
       </main>
-      <IdCard />
       <Footer />
     </>
   );
