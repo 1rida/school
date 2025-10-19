@@ -89,7 +89,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="https://wa.me/923401201788"
+              href="https://wa.me/923233298913"
               target="_blank"
               className="p-3 bg-green-600 rounded-full hover:bg-green-700 transition transform hover:scale-110"
             >

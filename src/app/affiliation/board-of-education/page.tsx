@@ -29,6 +29,28 @@ const BOARDS = [
     desc: "Ziauddin University Education Board focuses on modern education systems and affiliated schools/universities. It introduces innovative learning methods and ensures quality education at various levels.",
     path: "/ziauddin", // 🔹 unique path
   },
+  {
+  id: "aiou",
+  name: "Allama Iqbal Open University Education",
+  logo: "/images/allama.jpg",
+  desc: "Allama Iqbal Open University (AIOU) is Pakistan’s leading distance learning institution, offering flexible education programs from matric to PhD levels, promoting accessible learning for all.",
+  path: "/aiou", // 🔹 unique path
+},
+{
+  id: "sbte",
+  name: "Sindh Board of Technical Education",
+  logo: "/images/sindh.jpg",
+  desc: "Sindh Board of Technical Education (SBTE) focuses on developing technical and vocational skills through specialized diplomas and certifications, empowering students for modern industries.",
+  path: "/sbte", // 🔹 unique path
+},
+{
+  id: "ku",
+  name: "University of Karachi Education",
+  logo: "/images/karachi.jpg",
+  desc: "The University of Karachi is one of Pakistan’s top academic institutions, providing diverse undergraduate and postgraduate programs with a strong emphasis on research and innovation.",
+  path: "/karachi", // 🔹 unique path
+},
+
 ];
 
 export default function BoardOfEducation() {

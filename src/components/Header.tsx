@@ -13,14 +13,15 @@ export default function Header() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % 3);
+      setCurrentSlide((prev) => (prev + 1) % 5);
     }, 3000);
     return () => clearInterval(interval);
   }, []);
 
   const slides = [
-    "📞 PRINCIPAL MRS TAHIRA JAHANGIR 03233298913",
-    "📞 0340 1201788",
+    " MR Jahangir Alam (Administrator)",
+    " MRS TAHIRA JAHANGIR (Principal)",
+    "📞 +92 340 1201788 , +92 3233298913",
     "📧 global.e.h.s.school@gmail.com",
     "📍 A-76,77,78 sector 1-A/2 NORTH KARACHI SHAHNAWAZ BHUTTO COLONY NEAR TO 4J BUS STOP",
   ];
@@ -47,10 +48,10 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 w-full z-50">
       {/* 🔹 Info Slider */}
-      <div className="bg-orange-200 text-black overflow-hidden">
+      <div className="bg-orange-200 text-black font-extrabold overflow-hidden">
         <div className="relative h-8 sm:h-10 flex items-center">
           <div
-            className="flex transition-transform duration-700 ease-in-out"
+            className="flex transition-transform duration-700 ease-in-out "
             style={{
               transform: `translateX(-${currentSlide * 100}%)`,
               width: `${slides.length * 100}%`,
@@ -59,7 +60,7 @@ export default function Header() {
             {slides.map((text, i) => (
               <div
                 key={i}
-                className="w-full flex-shrink-0 flex items-center justify-center text-xs sm:text-sm font-medium"
+                className="w-full flex-shrink-0 flex items-center justify-center text-xs sm:text-sm font-large"
               >
                 {text}
               </div>
@@ -82,10 +83,10 @@ export default function Header() {
               priority
             />
             <div className="flex flex-col">
-              <span className="font-extrabold text-2xl tracking-wide text-black">
+              <span className="font-extrabold text-3xl tracking-wide text-black underline ">
                 GLOBAL
               </span>
-              <span className="text-xs font-bold text-white -mt-1">
+              <span className="text-xs font-bold text-black -mt-0">
                 EDUCATIONAL HIGHER <br /> SECONDARY SCHOOL
               </span>
             </div>

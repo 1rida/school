@@ -6,6 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 const images = [
+  "/images/administrator.jpg",
   "/images/slide1.jpg",
   "/images/slide2.jpg",
   "/images/slide3.jpg",

@@ -75,7 +75,7 @@ export default function EventPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Our Memorable Event Moments
+          Science and Technofest Exhibition
         </motion.h2>
 
         <motion.p

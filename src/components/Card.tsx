@@ -1,55 +1,99 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 interface TeamMember {
   img: string;
   name: string;
   role: string;
+  aboutPath: string;
 }
 
 const team: TeamMember[] = [
+ {
+    img: "/images/administrator.jpg",
+    name: "Mr Jahangir Alam",
+    role: "Administrator",
+    aboutPath: "/about",
+  },
+  
   {
     img: "/images/card1.jpg",
     name: "Mrs. Tahira Jahangir",
     role: "Principal",
+    aboutPath: "/about",
   },
+  {
+    img: "/images/card10.jpg",
+    name: "Mr Uzair Alam",
+    role: "IT expert",
+    aboutPath: "/about",
+  },
+   {
+    img: "/images/card11.jpg",
+    name: "Mr Saad Alam",
+    role: "IT Financial Advisor",
+    aboutPath: "/about",
+  },
+
   {
     img: "/images/card2.jpg",
     name: "Mrs. Shafaq Nayyar",
     role: "Vice Principal (Afternoon Shift)",
+    aboutPath: "/about",
   },
   {
     img: "/images/card3.jpg",
     name: "Mrs. Sadaf Zahra",
-    role: "Accountant",
+    role: "Accountant, Rechecker and Lab Technician",
+    aboutPath: "/about",
   },
   {
     img: "/images/card4.jpg",
-    name: "Sir Abdul Rehman Ansari",
+    name: "Engineer Sir Abdul Rehman Ansari",
     role: "English, IT, Graphic Designer, Web Development & Agentic AI",
+    aboutPath: "/about",
   },
   {
     img: "/images/card5.jpg",
     name: "Sir Afzal",
-    role: "IT & Printing Machine Operating",
+    role: "IT, Printing Machine Operator and Hardware Repairer",
+    aboutPath: "/about",
   },
   {
     img: "/images/card8.jpg",
     name: "Mrs Saima Liaqat",
-    role: " vice principal (morning)",
+    role: "Rechecker, OT Operator and BSN",
+    aboutPath: "/about",
   },
-   {
+  {
     img: "/images/card7.jpg",
-    name: "Mrs maria kanwal",
-    role: "rechecker and Assisstant of director",
+    name: "Mrs Maria Kanwal",
+    role: "Vice Principal (Morning) and Writer (Books)",
+    aboutPath: "/about",
+  },
+  {
+    img: "/images/card6.jpg",
+    name: "Miss Kainat",
+    role: "Accountant (Morning)",
+    aboutPath: "/about",
+  },
+  {
+    img: "/images/card9.jpg",
+    name: "Miss Urooj",
+    role: "Lab Technician",
+    aboutPath: "/about",
   },
    {
-    img: "/images/card6.jpg",
-    name: "Miss kainat",
-    role: "accountant (morning)",
+    img: "/images/card12.jpg",
+    name: "Miss Alisha",
+    role: "Accountant ",
+    aboutPath: "/about",
   },
+  
+ 
 ];
 
 export default function Card() {
@@ -71,40 +115,61 @@ export default function Card() {
         {team.map((member, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, scale: 0.8, y: 50 }}
+            initial={{ opacity: 0, scale: 0.9, y: 50 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
             viewport={{ once: true, amount: 0.2 }}
-            className={`bg-gray-50 rounded-2xl shadow-md overflow-hidden text-center group 
-                        hover:shadow-2xl hover:scale-150 transition-transform duration-500
-                        ${index === 4 ? "col-span-full md:col-span-1 md:col-start-2" : ""}`}
+            className="group [perspective:1000px] hover:cursor-pointer"
           >
-            {/* Image */}
-            <div className="relative mx-auto mt-6 w-32 h-32 rounded-full overflow-hidden 
-                            ring-4 ring-[#f97316] group-hover:ring-orange-500 
-                            transition-all duration-500">
-              <Image
-                src={member.img}
-                alt={member.name}
-                fill
-                className={`group-hover:scale-110 transition-transform duration-500 object-cover object-center`}
-              />
-            </div>
+            {/* Flip container */}
+            <div className="relative w-full h-[340px] bg-transparent transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] rounded-2xl shadow-lg">
 
-            {/* Text */}
-            <div className="p-5">
-              <h3 className="text-lg font-bold text-gray-800 group-hover:text-orange-600 transition-colors duration-500">
-                {member.name}
-              </h3>
-              <p className="text-sm text-gray-600 mt-1 group-hover:text-gray-800 transition-colors duration-500">
-                {member.role}
-              </p>
+              {/* 🔹 Front Side */}
+              <div className="absolute inset-0 bg-gray-50 rounded-2xl flex flex-col items-center justify-center [backface-visibility:hidden]">
+                <div className="relative w-32 h-32 rounded-full overflow-hidden ring-4 ring-[#f97316] mb-4">
+                  <Image
+                    src={member.img}
+                    alt={member.name}
+                    fill
+                    className="object-cover object-center"
+                  />
+                </div>
+                <h3 className="text-lg font-bold text-gray-800">{member.name}</h3>
+                <p className="text-sm text-gray-600 mt-1 px-3 text-center">
+                  {member.role}
+                </p>
+              </div>
+
+              {/* 🔹 Back Side (keeps text upright) */}
+              <div className="absolute inset-0 bg-gradient-to-b from-orange-400 to-orange-600 rounded-2xl flex flex-col items-center justify-center text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                <div className="flex flex-col items-center justify-center">
+                  <div className="relative w-24 h-24 rounded-full overflow-hidden ring-4 ring-white mb-3">
+                    <Image
+                      src={member.img}
+                      alt={member.name}
+                      fill
+                      className="object-cover object-center"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold mb-2">{member.name}</h3>
+                  <p className="text-sm opacity-90 mb-4 px-4 text-center">
+                    Learn more about {member.name.split(" ")[0]}’s achievements and dedication.
+                  </p>
+                  <Link
+                    href={member.aboutPath}
+                    className="bg-white text-orange-600 px-4 py-2 rounded-full font-semibold hover:bg-gray-100 transition"
+                  >
+                    About
+                  </Link>
+                </div>
+              </div>
+
             </div>
           </motion.div>
         ))}
       </div>
 
-      {/* 🔹 Extra Section Below Cards */}
+      {/* 🔹 Bottom Section */}
       <div className="text-center mt-20 px-6">
         <h3 className="text-2xl md:text-3xl font-bold text-[#0b3c7a] underline decoration-orange-400 decoration-2 inline-block">
           Building a Brighter Future Together
