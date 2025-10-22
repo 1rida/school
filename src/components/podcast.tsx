@@ -47,7 +47,7 @@ export default function PodcastPage() {
             className="text-center mb-14"
           >
             <h1 className="text-4xl sm:text-5xl font-extrabold text-[#0b3c7a] tracking-tight">
-              🎙️ Our Podcasts
+              🎙️ Our Podcasts...
             </h1>
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
               Listen to insightful discussions on creativity and technology.
