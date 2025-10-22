@@ -50,7 +50,7 @@ export default function PodcastPage() {
               🎙️ Our Podcasts...
             </h1>
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-              Listen to insightful discussions on creativity and technology.
+              Listen to insightful discussions on creativity and technology...
             </p>
           </motion.div>
 
