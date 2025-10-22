@@ -437,9 +437,9 @@ export default function AboutPage() {
       </p>
 
       <p className="text-gray-600 leading-relaxed mb-6 italic">
-        "Let us continue to work hand in hand to make Global Educational Higher Secondary School 
+        Let us continue to work hand in hand to make Global Educational Higher Secondary School 
         a beacon of excellence — where learning is a joy, character-building is a priority, and 
-        every child’s dream finds a path to success."
+        every child’s dream finds a path to success.
       </p>
 
       <h3 className="text-xl font-bold text-blue-900 mb-2">
