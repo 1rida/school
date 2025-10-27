@@ -25,10 +25,16 @@ const team: TeamMember[] = [
     role: "Principal",
     aboutPath: "/about",
   },
+   {
+    img: "/images/card7.jpg",
+    name: "Mrs Maria Kanwal",
+    role: "Vice Principal (Morning) and Writer (Books)",
+    aboutPath: "/about",
+  },
   {
-    img: "/images/card10.jpg",
-    name: "Mr Uzair Alam",
-    role: "IT expert",
+    img: "/images/card2.jpg",
+    name: "Mrs. Shafaq Nayyar",
+    role: "Vice Principal (Afternoon Shift)",
     aboutPath: "/about",
   },
    {
@@ -38,19 +44,20 @@ const team: TeamMember[] = [
     aboutPath: "/about",
   },
 
+
   {
-    img: "/images/card2.jpg",
-    name: "Mrs. Shafaq Nayyar",
-    role: "Vice Principal (Afternoon Shift)",
+    img: "/images/card10.jpg",
+    name: "Mr Uzair Alam",
+    role: "IT expert",
     aboutPath: "/about",
   },
-  {
-    img: "/images/card3.jpg",
-    name: "Mrs. Sadaf Zahra",
-    role: "Accountant, Rechecker and Lab Technician",
+   {
+    img: "/images/card9.jpg",
+    name: "Miss Urooj Jahangir",
+    role: "Lab Technician",
     aboutPath: "/about",
   },
-  {
+ {
     img: "/images/card4.jpg",
     name: "Engineer Sir Abdul Rehman Ansari",
     role: "English, IT, Graphic Designer, Web Development & Agentic AI",
@@ -62,30 +69,32 @@ const team: TeamMember[] = [
     role: "IT, Printing Machine Operator and Hardware Repairer",
     aboutPath: "/about",
   },
-  {
+   {
     img: "/images/card8.jpg",
     name: "Mrs Saima Liaqat",
     role: "Rechecker, OT Operator and BSN",
     aboutPath: "/about",
   },
+  
+
+  
   {
-    img: "/images/card7.jpg",
-    name: "Mrs Maria Kanwal",
-    role: "Vice Principal (Morning) and Writer (Books)",
+    img: "/images/card3.jpg",
+    name: "Mrs. Sadaf Zahra",
+    role: "Accountant, Rechecker and Lab Technician",
     aboutPath: "/about",
   },
+ 
+  
+ 
+ 
   {
     img: "/images/card6.jpg",
     name: "Miss Kainat",
     role: "Accountant (Morning)",
     aboutPath: "/about",
   },
-  {
-    img: "/images/card9.jpg",
-    name: "Miss Urooj",
-    role: "Lab Technician",
-    aboutPath: "/about",
-  },
+ 
    {
     img: "/images/card12.jpg",
     name: "Miss Alisha",

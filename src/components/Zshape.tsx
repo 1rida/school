@@ -61,9 +61,7 @@ export default function MedicalCampCarousel() {
         </motion.h2>
 
         <p className="max-w-3xl mx-auto text-center text-lg text-gray-700 leading-relaxed mb-12">
-          Global School proudly organized a free medical camp for students,
-          parents, and the community. Doctors provided health check-ups,
-          awareness sessions, and guidance to promote a healthier society.
+         A Free Dental Camp was organized at Global Educational Higher Secondary School, where more than 60 doctors from Hamdard University, Karachi, participated. The camp aimed to provide free dental checkups and awareness about oral health to the residents of Shahnawaz Bhutto Colony. It was a great community initiative promoting health and well being. The efforts of the medical team were highly appreciated by students, parents, and locals alike.
         </p>
 
         <div className="relative">

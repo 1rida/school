@@ -43,7 +43,8 @@ export default function Footer() {
               <Mail size={16} /> global.e.h.s.school@gmail.com
             </div>
             <div className="flex items-center gap-2">
-              <MapPin size={16} />
+              <MapPin className="w-7 h-7" />
+
               <Link
                 href="https://www.google.com/maps/place/Global+Educational+Higher+Secondary+School/@24.9986823,67.050301,17z/data=!3m1!4b1!4m6!3m5!1s0x3eb341089d1535ab:0x69b32e57095ba519!8m2!3d24.9986823!4d67.050301!16s%2Fg%2F11hbg8ymjb?entry=ttu"
                 target="_blank"

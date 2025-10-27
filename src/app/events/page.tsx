@@ -84,8 +84,7 @@ export default function EventPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          Relive the highlights from our special day! Scroll through the gallery
-          and experience the excitement, laughter, and joy all over again.
+          We were honored by the esteemed presence of Mayor Karachi, Mr. Murtaza Wahab Siddiqui, at the Science Technofest Exhibition held at Global Educational Higher Secondary School. His visit added great value and encouragement to the young innovators. The students were inspired by his words on the importance of science and technology in shaping Pakistan,s future. His participation made the event truly memorable and motivating for all.
         </motion.p>
       </section>
 

@@ -45,9 +45,9 @@ const BOARDS = [
 },
 {
   id: "ku",
-  name: "University of Karachi Education",
+  name: "Hamdard University Karachi",
   logo: "/images/karachi.jpg",
-  desc: "The University of Karachi is one of Pakistan’s top academic institutions, providing diverse undergraduate and postgraduate programs with a strong emphasis on research and innovation.",
+  desc: "The Hamdard  University of Karachi is one of Pakistan’s top academic institutions, providing diverse undergraduate and postgraduate programs with a strong emphasis on research and innovation.",
   path: "/karachi", // 🔹 unique path
 },
 
@@ -84,13 +84,13 @@ export default function BoardOfEducation() {
               <motion.div
                 whileHover={{ scale: 1.1, rotate: 3 }}
                 transition={{ type: "spring", stiffness: 200 }}
-                className="relative w-72 h-72 mb-6"
+                className="relative w-72 h-72 mb-6 "
               >
                 <Image
                   src={board.logo}
                   alt={board.name}
                   fill
-                  className="object-cover rounded-full border-4 border-[#0b3c7a]/40 shadow-xl"
+                  className="object-cover rounded-full border-9 border-[#0b3c7a]/40 shadow-xl"
                 />
               </motion.div>
 
